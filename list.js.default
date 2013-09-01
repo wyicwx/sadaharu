@@ -1,0 +1,39 @@
+module.exports = {
+    "data": {
+		"disable": true,
+        "respond": "I'm data"
+    },
+    "url": {
+    	"respond": "http://www.xxx.com"
+    },
+    "file": {
+    	"responde": "js/a.js"
+    },
+    "comboFile": {
+    	"respond": [
+    		"js/a.js",
+    		"js/b.js"
+    	]
+    },
+    "comboMix": {
+    	"respond": [
+    		"I'm data",
+    		"http://www.xxx.com",
+    		"js/a.js",
+    	],
+        "compressHtml": true
+    },
+	"comboTemplate": {
+		"respond": [
+			"I'm data",
+			{
+				src: 'template path',
+				data: {
+					param1: 'param1 path',
+					param2: 'param2 path',
+					param3: 'I'm data too'
+				}
+			}
+		]		
+	}
+}

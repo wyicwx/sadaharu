@@ -1,0 +1,9 @@
+module.exports = {
+	"pathBase": "/data/",
+    "port": 8080,
+    "slowLoad": false,
+    "slowBlockByte": 1024,
+    "slowTimeInterval": 100,
+    "slient": true,
+    "pacFile": "proxy.pac"
+}
