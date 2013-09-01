@@ -17,8 +17,11 @@
 	$ node main.js
 
 1.pac文件
+
 自动配置URL: http://localhost:port/proxy.pac
+
 2.代理端口
+
 设置代理为: http://localhost:port
 
 ###依赖：
@@ -66,12 +69,16 @@ pacFile指定pac文件模板
 	}
 
 关于匹配规则
+
 1.可以使用js正则匹配，规则内用()包起来的部分不转义,其余部分进行字符转义
 2.
 
 关于respond
+
 1.使用$#(#为数字)可以替换规则内匹配到的部分
+
 2.可以使用相对路径文件、绝对路径文件、字符串、网络文件
+
 3.用下面的方法指定模板文件,并指定参数参数值同2
 
 	respond: [
@@ -86,9 +93,11 @@ pacFile指定pac文件模板
 	]
 
 关于ext
+
 用于指定返回http头的content-type
 
 关于compressHtml
+
 压缩html文件为字符串，作拼接js模板文件用
 
 ##Hosts
