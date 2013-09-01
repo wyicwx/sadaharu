@@ -31,11 +31,6 @@ var utils 	= require('./libs/utils.js'),
 	});
 })();
 
-// console.log(global);
-// global.onerror = function(e) {
-// 	console.log('error handler');
-// 	throw e;
-// }
 // pac 文件分发
 app.get('/proxy.pac', function(request, response, next) {
     response.writeHead(200, {
