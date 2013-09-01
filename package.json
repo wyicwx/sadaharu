@@ -6,7 +6,7 @@
   "dependencies": {
     "mime": "*",
     "express": "3.x",
-	"color": "*",
+	"colors": "*",
 	"ejs": "*"
   },
   "repository": {

@@ -27,11 +27,11 @@ module.exports = {
 		"respond": [
 			"I'm data",
 			{
-				src: 'template path',
+				src: "template path",
 				data: {
-					param1: 'param1 path',
-					param2: 'param2 path',
-					param3: 'I'm data too'
+					param1: "param1 path",
+					param2: "param2 path",
+					param3: "I'm data too"
 				}
 			}
 		]		
