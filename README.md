@@ -17,6 +17,9 @@
 ##使用
 
 	$ node main.js
+	$ cp list.js.default list.js
+	$ cp hosts.js.default hosts.js
+	$ cp config.js.default config.js
 
 1.pac文件
 
