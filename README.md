@@ -10,6 +10,8 @@
 
 ##安装
 
+	$ git clone git@github.com:wyicwx/sadaharu.git
+	$ cd sadaharu
 	$ npm install
 
 ##使用
