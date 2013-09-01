@@ -1,4 +1,5 @@
-#这是一个简易的前端开发工具，使用代理的方法替换线上静态文件，类似于fiddler的autoresponder，但比其更加强大
+#Sakaharu
+#####这是一个简易的前端开发工具，使用代理的方法替换线上静态文件，类似于fiddler的autoresponder，但比其更加强大
 可以实现:
 
 1、替换通过代理的请求所返回的数据或文件,支持combo文件
@@ -7,22 +8,22 @@
 
 3、支持自定义host
 
-#安装
+##安装
 $ npm install
 
-#使用
+##使用
 1.pac文件
 自动配置URL: http://localhost:port/proxy.pac
 2.代理端口
 设置代理为: http://localhost:port
 
-#####依赖：
+###依赖：
 [mime](https://github.com/broofa/node-mime)
 [express](https://github.com/visionmedia/express)
 [colors](https://github.com/Marak/colors.js)
 [ejs](https://github.com/visionmedia/ejs)
 
-#####配置：
+###配置：
 config = {<br>
 	'pathBase': '/data/',<br>
 　　'port': 8082,<br>
@@ -84,16 +85,16 @@ respond: [
 关于compressHtml
 压缩html文件为字符串，作拼接js模板文件用
 
-###Hosts
+##Hosts
 在hosts.js文件内指定替换的host
 module.exports = {
 	'www.xxx.com': '127.0.0.1'		
 }
 
-#其他
+##其他
 由于浏览器有缓存，所以使用代理pac文件的方式当规则或者host有修改时必须重新获取pac文件才能生效
 
 
-#测试用例
+##测试用例
 使用mocha测试(不断完善中)
 $ mocha
