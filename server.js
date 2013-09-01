@@ -59,7 +59,7 @@ app.all('*', function(request, response) {
 
     if(fileInfo) {
     	utils.log('has replace ' + request.url);
-		proxy.f(fileInfo.respond, fileInfo, function(fileList) {
+		proxy.fileGeter(fileInfo.respond, fileInfo, function(fileList) {
 			var headers = proxy.getResponseHeader(fileInfo),
 				data, dataBuffers;
 
