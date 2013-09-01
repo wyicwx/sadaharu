@@ -24,15 +24,15 @@ $ npm install
 [ejs](https://github.com/visionmedia/ejs)
 
 ###配置：
-config = {<br>
-	'pathBase': '/data/',<br>
-　　'port': 8082,<br>
-　　'slowLoad': true,<br>
-　　'slowBlockByte': 1*1024,<br>
-　　'slowTimeInterval': 100,<br>
-    "slient": true,<br>
-    "pacFile": "proxy.pac"<br>
-}
+	config = {<br>
+		'pathBase': '/data/',<br>
+	　　'port': 8082,<br>
+	　　'slowLoad': true,<br>
+	　　'slowBlockByte': 1*1024,<br>
+	　　'slowTimeInterval': 100,<br>
+	    "slient": true,<br>
+	    "pacFile": "proxy.pac"<br>
+	}
 
 port 代理端口
 
@@ -48,17 +48,17 @@ pacFile指定pac文件模板
 
 ###替换规则
 规则在list.js内定义
-module.exports = {
-	'www.xxx.com/index.html': {
-		'disable': false,
-		'ext': 'text/html',
-		"compressHtml": false,
-		'respond': [
-			'/data/index.html'	
-		]
-				
-	}		
-}
+	module.exports = {
+		'www.xxx.com/index.html': {
+			'disable': false,
+			'ext': 'text/html',
+			"compressHtml": false,
+			'respond': [
+				'/data/index.html'	
+			]
+					
+		}		
+	}
 
 关于匹配规则
 1.可以使用js正则匹配，规则内用()包起来的部分不转义,其余部分进行字符转义
@@ -68,16 +68,16 @@ module.exports = {
 1.使用$#(#为数字)可以替换规则内匹配到的部分
 2.可以使用相对路径文件、绝对路径文件、字符串、网络文件
 3.用下面的方法指定模板文件,并指定参数参数值同2
-respond: [
-	{
-		src: '/data/jsTmpl.js',
-		data: {
-			param1: 'param1 path',
-			param2: 'string',
-			param3: 'network file'
-		}			
-	}
-]
+	respond: [
+		{
+			src: '/data/jsTmpl.js',
+			data: {
+				param1: 'param1 path',
+				param2: 'string',
+				param3: 'network file'
+			}			
+		}
+	]
 
 关于ext
 用于指定返回http头的content-type
@@ -87,9 +87,9 @@ respond: [
 
 ##Hosts
 在hosts.js文件内指定替换的host
-module.exports = {
-	'www.xxx.com': '127.0.0.1'		
-}
+	module.exports = {
+		'www.xxx.com': '127.0.0.1'		
+	}
 
 ##其他
 由于浏览器有缓存，所以使用代理pac文件的方式当规则或者host有修改时必须重新获取pac文件才能生效
