@@ -1,18 +1,17 @@
 {
   "name": "Sadaharu",
-  "description": "这是一个简易的前端开发工具，使用代理的方法替换线上静态文件，类似于fiddler的autoresponder，但比其更加强大
-",
+  "description": "这是一个简易的前端开发工具，使用代理的方法替换线上静态文件，类似于fiddler的autoresponder，但比其更加强大",
   "version": "1.0.0",
   "author": "Chen Weixin <wyicwx@gmail.com> (http://weibo.com/236008243)",
   "dependencies": {
     "mime": "*",
     "express": "3.x",
-	"color: "*",
+	"color": "*",
 	"ejs": "*"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/wyicwx/node-proxy.git"
+    "url": "git://github.com/wyicwx/sadaharu"
   },
   "main": "main",
   "engines": {
