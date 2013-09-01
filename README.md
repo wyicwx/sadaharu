@@ -13,6 +13,9 @@
 	$ npm install
 
 ##使用
+
+	$ node main.js
+
 1.pac文件
 自动配置URL: http://localhost:port/proxy.pac
 2.代理端口
