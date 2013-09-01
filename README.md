@@ -9,7 +9,8 @@
 3、支持自定义host
 
 ##安装
-$ npm install
+
+	$ npm install
 
 ##使用
 1.pac文件
@@ -24,14 +25,14 @@ $ npm install
 [ejs](https://github.com/visionmedia/ejs)
 
 ###配置：
-	config = {<br>
-		'pathBase': '/data/',<br>
-	　　'port': 8082,<br>
-	　　'slowLoad': true,<br>
-	　　'slowBlockByte': 1*1024,<br>
-	　　'slowTimeInterval': 100,<br>
-	    "slient": true,<br>
-	    "pacFile": "proxy.pac"<br>
+	config = {
+		'pathBase': '/data/',
+	　　'port': 8082,
+	　　'slowLoad': true,
+	　　'slowBlockByte': 1*1024,
+	　　'slowTimeInterval': 100,
+	    "slient": true,
+	    "pacFile": "proxy.pac"
 	}
 
 port 代理端口
@@ -48,6 +49,7 @@ pacFile指定pac文件模板
 
 ###替换规则
 规则在list.js内定义
+
 	module.exports = {
 		'www.xxx.com/index.html': {
 			'disable': false,
@@ -68,6 +70,7 @@ pacFile指定pac文件模板
 1.使用$#(#为数字)可以替换规则内匹配到的部分
 2.可以使用相对路径文件、绝对路径文件、字符串、网络文件
 3.用下面的方法指定模板文件,并指定参数参数值同2
+
 	respond: [
 		{
 			src: '/data/jsTmpl.js',
@@ -87,6 +90,7 @@ pacFile指定pac文件模板
 
 ##Hosts
 在hosts.js文件内指定替换的host
+
 	module.exports = {
 		'www.xxx.com': '127.0.0.1'		
 	}
@@ -97,4 +101,5 @@ pacFile指定pac文件模板
 
 ##测试用例
 使用mocha测试(不断完善中)
-$ mocha
+
+	$ mocha
